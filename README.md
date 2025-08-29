@@ -1,4 +1,4 @@
-<img width="923" height="638" alt="Cuplikan layar 2025-08-29 201824" src="https://github.com/user-attachments/assets/d8c4df71-3cbc-43c3-89cf-f1cb0a64dda1" /># Point Of Sale System API - Backend Developer Technical Test
+# Point Of Sale System API - Backend Developer Technical Test
 
 Back-End Developer RESTful APIs untuk sebuah sistem Point Of Sale (POS) sederhana yang dibangun dengan NodeJs dan ExpressJs database menggunakan MySQL. API ini menyediakan beberapa fitur seperti manajemen proyek, pemrosesan pada transaksi produk, dan manajemen iventori.
 
@@ -180,6 +180,7 @@ Untuk melakukan testing ini saya menggunakan Postman
 - ### GET http://localhost:3000/api/transactions/:id
   - Respon
   <img width="923" height="641" alt="Cuplikan layar 2025-08-29 202647" src="https://github.com/user-attachments/assets/f044c59b-84c5-46f0-aea9-a1d8f45e0234" />
+
 
 
 
