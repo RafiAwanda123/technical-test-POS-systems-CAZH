@@ -211,8 +211,62 @@ Untuk melakukan testing ini saya menggunakan Postman
      
      <img width="750" alt="Cuplikan layar 2025-08-29 202809" src="https://github.com/user-attachments/assets/870b73f8-2d72-482b-a1a4-207c6e6b0001" />
 
+2. **Transaction Logic**
+   Penjualan melibatkan beberapa produk dengan jumlah yang berbeda. Bagaimana Anda memastikan konsistensi data?
 
+   **Solusi:**
+   - Menggunakan transaksi data (BEGIN, COMMIT, ROLLBACK)
+   - Memproses semuanya dalam satu transaksi
+   - Rollback bila ada error
 
+3. **Error Handling**
+   Apa yang seharusnya terjadi jika terjadi kesalahan? Data tidak valid, produk hilang, atau kesalahan basis data?
+
+   **Solusi:**
+   - Format Error harus konsisten
+   - Kode Error yang tepat
+   - Pesan error terperinci untuk Development
+   - Pesan error umum untuk Product
+
+   <img width="700" alt="image" src="https://github.com/user-attachments/assets/625c83a9-7882-46c6-9fe0-df2cb3caa7c5" />
+   
+4. **Data Validation**
+    Pengguna akan mengirimkan data yang buruk. Bagaimana Anda menangani dan menanggapinya?
+
+   **Solusi:**
+   - Validasi multi-lapis (Controller, Services, Databases)
+   - Menggunakan express-validator untuk input validation
+   - Sequelize validation untuk model-level validation
+   - Kostum validators untuk business logic di Service dan memudahkan untuk melakukan penambahan fitur
+
+## Apa yang Telah Diimplementasikan
+
+**Core Requirement**
+  - Desain Database untuk products, transactions, transaction_items
+  - Product management (CRUD operations)
+  - Process sales transactions
+  - View transaction history
+
+**Key Challenges**
+  - Stock Management dengan inventory validation
+  - Product Management (CRUD operations)
+  - Process sales transactions
+  - View transaction history
+
+**Technical Expectations**
+  - Maintainable code structure dengan pola service
+  - Efficient database queries dengan Sequelize ORM
+  - Consistent API responses dengan appropriate HTTP status codes
+  - Correct business logic implementation
+
+## Submission
+Untuk Technical Test ini sudah dilakuksan sesuai requirement:
+  - Working API dengan semua endpoint CRUD
+  - Database schema/setup files
+  - README dengan setup instructions
+  - Dengan contoh memanggil API dan test data
+
+Repository siap dikirim ke email developer@cazh.id 
 
 
 
