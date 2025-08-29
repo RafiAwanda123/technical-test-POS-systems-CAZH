@@ -48,3 +48,34 @@ Back-End Developer RESTful APIs untuk sebuah sistem Point Of Sale (POS) sederhan
     );
 ```
 
+## Step-step instalasi
+
+### Step
+1. Clone Repo
+   ```bash
+       git clone <repo-url>
+       cd nama-repo
+   ```
+2. Install Library
+   ```bash
+       npm install
+   ```
+3. Setup Database
+   ```bash
+       mysql -u root -p -e "CREATE DATABASE nama-database;"
+       nano .env
+       # Membuat envoriment untuk menyimpan key yang diperlukan
+   ```
+4. Inisiasi Database
+   ```bash
+        npm run init-db
+   ```
+5. Jalankan Server
+   ```bash
+       # Untuk Development mode
+       npm run dev
+       # Untuk Product mode
+       npm run start
+   ```
+
+
