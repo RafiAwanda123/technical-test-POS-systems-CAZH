@@ -98,7 +98,7 @@ Untuk melakukan testing ini saya menggunakan Postman
 
 ### Membuat Produk
 - ### POST http://localhost:3000/api/products
-  Request
+  - Request
   ```bash
       {
           "name": "Laptop Ideapad Slim 1",
@@ -108,8 +108,9 @@ Untuk melakukan testing ini saya menggunakan Postman
           "sku": "LNV-IDS-001"
       }
   ```
-  Respon
-  <img width="920" height="549" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
+  - Respon
+  <img width="500" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
+
 
 
 
