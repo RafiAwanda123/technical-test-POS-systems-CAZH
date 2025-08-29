@@ -117,10 +117,10 @@ Untuk melakukan testing ini saya menggunakan Postman
   ```bash
       {
           "payment_method": "cash",
-          "cashier_name": "Rafi Awanda",
+          "cashier_name": "Ahmad Sahroni",
           "items": [
                   {
-                    "product_id": 6,
+                    "product_id": 4,
                     "quantity": 7
                   }
               ]    
@@ -130,6 +130,7 @@ Untuk melakukan testing ini saya menggunakan Postman
   <img width="700" alt="Cuplikan layar 2025-08-29 202844" src="https://github.com/user-attachments/assets/8ebd6116-30dd-4f95-8a4d-84813a78d376" />
 
   
+
 
 
 
