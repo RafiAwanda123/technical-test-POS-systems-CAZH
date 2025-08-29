@@ -111,6 +111,28 @@ Untuk melakukan testing ini saya menggunakan Postman
   - Respon
   <img width="500" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
 
+  ### Memproses Transaksi
+- ### POST http://localhost:3000/api/transactions
+  - Request
+  ```bash
+      {
+          "payment_method": "cash",
+          "cashier_name": "Rafi Awanda",
+          "items": [
+                  {
+                    "product_id": 6,
+                    "quantity": 7
+                  }
+              ]    
+      }
+  ```
+  - Respon
+  <img width="700" alt="Cuplikan layar 2025-08-29 202844" src="https://github.com/user-attachments/assets/8ebd6116-30dd-4f95-8a4d-84813a78d376" />
+
+  
+
+
+
 
 
 
