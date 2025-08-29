@@ -264,9 +264,10 @@ Untuk Technical Test ini sudah dilakuksan sesuai requirement:
   - Working API dengan semua endpoint CRUD
   - Database schema/setup files
   - README dengan setup instructions
-  - Dengan contoh memanggil API dan test data
+  - Dengan contoh memanggil API untuk test
 
 Repository siap dikirim ke email developer@cazh.id 
+
 
 
 
