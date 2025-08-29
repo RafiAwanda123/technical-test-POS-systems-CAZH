@@ -109,9 +109,22 @@ Untuk melakukan testing ini saya menggunakan Postman
       }
   ```
   - Respon
-  <img width="500" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
+  <img width="700" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
+Untuk melakukan testing ini saya menggunakan Postman 
 
-  ### Memproses Transaksi
+### Melihat Produk
+- ### GET http://localhost:3000/api/products
+  - Respon
+  <img width="700" alt="Cuplikan layar 2025-08-29 201801" src="https://github.com/user-attachments/assets/2bc1f377-b19a-40e3-a642-49966c3e90b2" />
+
+### Melihat Produk
+- ### GET http://localhost:3000/api/products/:id
+  - Respon
+  <img width="700" alt="Cuplikan layar 2025-08-29 201824" src="https://github.com/user-attachments/assets/ed82ab5c-83f9-4b3d-9100-b00adb3877e6" />
+
+
+
+### Memproses Transaksi
 - ### POST http://localhost:3000/api/transactions
   - Request
   ```bash
@@ -130,6 +143,7 @@ Untuk melakukan testing ini saya menggunakan Postman
   <img width="700" alt="Cuplikan layar 2025-08-29 202844" src="https://github.com/user-attachments/assets/8ebd6116-30dd-4f95-8a4d-84813a78d376" />
 
   
+
 
 
 
