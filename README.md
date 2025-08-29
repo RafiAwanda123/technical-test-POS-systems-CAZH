@@ -78,4 +78,38 @@ Back-End Developer RESTful APIs untuk sebuah sistem Point Of Sale (POS) sederhan
        npm run start
    ```
 
+## API Endpoint
+### Produk Manajemen
+- `GET /api/products` - Mendapatkan semua produk
+- `GET /api/products/:id` - Mendapatkan detail produk
+- `POST /api/products` - Membuat produk baru
+- `PUT /api/products/:id` - Mengupdate produk
+- `DELETE /api/products/:id` - Menghapus produk
+- `PATCH /api/products/:id/stock` - Menambah stok produk
+
+### Transactions
+- `POST /api/transactions` - Memproses transaksi baru
+- `GET /api/transactions` - Mendapatkan riwayat transaksi
+- `GET /api/transactions/:id` - Mendapatkan detail transaksi
+
+## Contoh Memanggil API 
+
+Untuk melakukan testing ini saya menggunakan Postman 
+
+### Membuat Produk
+- ### POST http://localhost:3000/api/products
+  Request
+  ```bash
+      {
+          "name": "Laptop Ideapad Slim 1",
+          "description": "Laptop Kantoran cocok untuk semua pekerjaan",
+          "price": 6000000,
+          "stock_quantity": 13,
+          "sku": "LNV-IDS-001"
+      }
+  ```
+  Respon
+  <img width="920" height="549" alt="Cuplikan layar 2025-08-29 202013" src="https://github.com/user-attachments/assets/15d57916-70ba-4a6d-9783-7117a49a7c32" />
+
+
 
