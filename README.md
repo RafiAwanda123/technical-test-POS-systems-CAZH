@@ -179,7 +179,32 @@ Untuk melakukan testing ini saya menggunakan Postman
   ### Melihat History Transaksi Sesuai ID
 - ### GET http://localhost:3000/api/transactions/:id
   - Respon
-  <img width="923" height="641" alt="Cuplikan layar 2025-08-29 202647" src="https://github.com/user-attachments/assets/f044c59b-84c5-46f0-aea9-a1d8f45e0234" />
+  <img width="700" alt="Cuplikan layar 2025-08-29 202647" src="https://github.com/user-attachments/assets/f044c59b-84c5-46f0-aea9-a1d8f45e0234" />
+
+## Key Challenges dan Solusi
+1. **Stock Management**
+   Tangani inventaris dengan benar saat terjadi penjualan. Apa yang terjadi jika seseorang mencoba membeli lebih banyak daripada stok yang tersedia?
+
+   **Solusi:**
+   - Impelementasikan database transaksi untuk memastikan konsistensi data
+   - Validasikan ketersediaan stok data sebelum memproses transaksi
+   - Atomic operations untuk mengupdate stok
+   - Berikan kostum error handling untuk memberi tahu kalau stok ga bisa di transaksi
+     ```javascript
+         static async checkStockAvailability(productId, requiredQuantity) {
+            const product = await Product.findByPk(productId);
+            
+            if (!product) {
+              throw new Error(`Produk dengan ID ${productId} tidak ada dalam sistem.`);
+            }
+            
+            if (product.stock_quantity < requiredQuantity) {
+              throw new Error(`Stok tidak mencukupi untuk produk ${product.name}. Tersedia: ${product.stock_quantity}, Butuh: ${requiredQuantity}`);
+            }
+            
+            return true;
+          }
+     ```   
 
 
 
