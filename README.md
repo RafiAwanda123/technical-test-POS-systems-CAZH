@@ -190,6 +190,7 @@ Untuk melakukan testing ini saya menggunakan Postman
    - Validasikan ketersediaan stok data sebelum memproses transaksi
    - Atomic operations untuk mengupdate stok
    - Berikan kostum error handling untuk memberi tahu kalau stok ga bisa di transaksi
+     
      ```javascript
          static async checkStockAvailability(productId, requiredQuantity) {
             const product = await Product.findByPk(productId);
@@ -204,7 +205,13 @@ Untuk melakukan testing ini saya menggunakan Postman
             
             return true;
           }
-     ```   
+     ```
+     
+     **Hasil:**
+     
+     <img width="750" alt="Cuplikan layar 2025-08-29 202809" src="https://github.com/user-attachments/assets/870b73f8-2d72-482b-a1a4-207c6e6b0001" />
+
+
 
 
 
