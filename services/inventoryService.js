@@ -9,17 +9,21 @@ class InventoryService {
    * @throws {Error} Jika produk tidak ditemukan atau stok tidak cukup
    */
   static async checkStockAvailability(productId, requiredQuantity) {
-    const product = await Product.findByPk(productId);
-    
-    if (!product) {
-      throw new Error(`Produk dengan ID ${productId} tidak ada dalam sistem.`);
+    try{
+      const product = await Product.findByPk(productId);
+      
+      if (!product) {
+        throw new Error(`Produk dengan ID ${productId} tidak ada dalam sistem.`);
+      }
+      
+      if (product.stock_quantity < requiredQuantity) {
+        throw new Error(`Stok tidak mencukupi untuk produk ${product.name}. Tersedia: ${product.stock_quantity}, Butuh: ${requiredQuantity}`);
+      }
+      
+      return true;
+    } catch (error) {
+      throw error;
     }
-    
-    if (product.stock_quantity < requiredQuantity) {
-      throw new Error(`Stok tidak mencukupi untuk produk ${product.name}. Tersedia: ${product.stock_quantity}, Butuh: ${requiredQuantity}`);
-    }
-    
-    return true;
   }
 
   /**

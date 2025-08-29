@@ -3,15 +3,6 @@ const ErrorService = require('../services/errorService');
 // Middleware untuk menangani semua jenis error dalam aplikasi
 const errorHandler = (err, req, res, next) => {
   console.error('Stack error:', err.stack);
-
-  // Menangani error Sequelize
-  if (err.name === 'SequelizeDatabaseError') {
-    return res.status(500).json({
-      success: false,
-      message: 'Database error',
-      error: process.env.NODE_ENV === 'development' ? err.message : 'Internal server error'
-    });
-  }
   
   // Menangani error validasi Sequelize
   if (err.name === 'SequelizeValidationError') {
