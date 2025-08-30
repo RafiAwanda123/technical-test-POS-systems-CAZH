@@ -1,11 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
 const { testConnection } = require('./config/database');
-
 const routes = require('./routes');
-
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
@@ -45,7 +42,7 @@ app.use('*', (req, res) => {
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`\nMini POS API Server`);
+  console.log(`\nPoint Of Sale RESTFUL API Server`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`Health check: http://localhost:${PORT}/health`);
   console.log(`API Base URL: http://localhost:${PORT}/api`);
