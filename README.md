@@ -65,6 +65,13 @@ Back-End Developer RESTful APIs untuk sebuah sistem Point Of Sale (POS) sederhan
        mysql -u root -p -e "CREATE DATABASE nama-database;"
        nano .env
        # Membuat envoriment untuk menyimpan key yang diperlukan
+       DB_HOST=127.0.0.1
+       DB_PORT=3306
+       DB_NAME=nama-database
+       DB_USER=user
+       DB_PASSWORD=password
+       NODE_ENV=development
+       PORT=3000
    ```
 4. Inisiasi Database
    ```bash
@@ -267,6 +274,7 @@ Untuk Technical Test ini sudah dilakuksan sesuai requirement:
   - Dengan contoh memanggil API untuk test
 
 Repository siap dikirim ke email developer@cazh.id 
+
 
 
 
