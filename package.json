@@ -1,5 +1,5 @@
 {
-  "name": "mini-pos-api",
+  "name": "Point-Of-Sale-api",
   "version": "1.0.0",
   "description": "Technical Test untuk perusahaan CAZH dengan sistem Point of Sale RESTful APIs",
   "main": "server.js",
